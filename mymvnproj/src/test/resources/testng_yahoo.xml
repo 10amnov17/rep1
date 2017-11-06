@@ -1,0 +1,22 @@
+<suite name="Yahoo">
+
+  <test name="tst_retest_ff">
+   <parameter name="browser" value="firefox" />
+    <classes>
+         <class name="yahoo.ReTest"/>           
+       </classes>
+   </test>   
+   
+   <test name="tst_retest_chrome">
+   <parameter name="browser" value="chrome" />
+      <classes>
+         <class name="yahoo.ReTest"/>                
+       </classes>
+   </test>
+   
+  <listeners>
+   <listener class-name="atu.testng.reports.listeners.ATUReportsListener"></listener>
+   <listener class-name="atu.testng.reports.listeners.ConfigurationListener"></listener>
+   <listener class-name="atu.testng.reports.listeners.MethodListener"></listener>
+  </listeners>
+ </suite>
