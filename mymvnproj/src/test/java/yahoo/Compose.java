@@ -18,6 +18,7 @@ public class Compose extends MainClass
 	
   public void sendmail() throws Exception
   {
+	  System.out.println("hello");
 	  driver.findElement(By.xpath("//input[@class='composeicon']")).click();
 	  Thread.sleep(3000);
 	  driver.findElement(By.id("to")).sendKeys("abcd@gmail.com");
